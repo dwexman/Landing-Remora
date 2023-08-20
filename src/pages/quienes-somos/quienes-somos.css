@@ -1,0 +1,100 @@
+.jumbotron {
+    background-color: #030359;
+    height: auto;
+    width: auto;
+   
+}
+
+.container {
+    background-color: #030359;
+    margin-top: 130px;
+    
+}
+
+
+
+.button {
+    color: #fff;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity));
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+    border-color: white;
+}
+
+.button:before,
+.button:after,
+.button span:before,
+.button span:after {
+    content: 'Contáctanos';
+    background: linear-gradient(to bottom, #2016e2, #2d6ed0);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+
+.button span:before {
+    transform: scaleY(0.65);
+    left: 50%;
+    z-index: -1;
+    transition-delay: 0.1s;
+}
+
+.button span:after {
+    transform: scaleY(0.8);
+    left: 75%;
+    z-index: -1;
+}
+
+.button span {
+    padding: 10px 60px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.button:hover:before,
+.button:hover:after,
+.button:hover span:before,
+.button:hover span:after {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+
+
+.button:hover {
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .button {
+        margin-bottom: 20px;
+    }
+}
+
+.tittle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color:#030359;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15px;
+}
+

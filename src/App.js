@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Jumbotron from './components/jumbotron/jumbotron';
+import Card1 from './components/cards/card1';
+import Card2 from './components/cards/card2';
+import Navbar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
+import AcercaDe from './pages/acerca-de/acerca-de';
+import QuienesSomos from './pages/quienes-somos/quienes-somos';
+import { Navbar2 } from './components/navbar2/navbar2';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+
+    < Navbar2 />
+    <Routes>
+      <Route path='/' element={<Jumbotron />}></Route>
+      <Route path='/acerca-de' element={<AcercaDe />}></Route>
+      <Route path='/quienes-somos' element={<QuienesSomos />}></Route>
+    </Routes>
+    <Footer />
+  
+   
+    
+    
+    </BrowserRouter>
   );
 }
 

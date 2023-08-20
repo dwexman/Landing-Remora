@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar2.css";
-import "../navbar/logo.png";
+import logo from "../../logo.png"
 import { Link } from "react-router-dom";
 
 export function Navbar2 () {
@@ -10,7 +10,7 @@ export function Navbar2 () {
 
   <nav className="navbar navbar-expand-lg main-nav px-0">
     <Link className="navbar-brand" to="home">
-                      <img src="logo.png" alt="remora"/>
+                      <img src={logo} alt="remora"/>
                     </Link>
    
     <div className="collapse navbar-collapse" id="mainMenu">

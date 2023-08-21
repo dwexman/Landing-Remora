@@ -7,6 +7,7 @@ import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 import AcercaDe from './pages/acerca-de/acerca-de';
 import QuienesSomos from './pages/quienes-somos/quienes-somos';
+import Contacto from './pages/contacto/contacto';
 import { Navbar2 } from './components/navbar2/navbar2';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -22,6 +23,7 @@ function App() {
       <Route path='/' element={<Jumbotron />}></Route>
       <Route path='/acerca-de' element={<AcercaDe />}></Route>
       <Route path='/quienes-somos' element={<QuienesSomos />}></Route>
+      <Route path ='/contacto' element={<Contacto />}></Route>
     </Routes>
     <Footer />
   
